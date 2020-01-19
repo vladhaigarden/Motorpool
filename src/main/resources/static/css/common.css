@@ -1,0 +1,92 @@
+body {
+    background: url("../img/startPage/common_background.png");
+    margin: 0;
+}
+
+#leftHeader {
+
+    text-align: center;
+    width: 60%;
+    margin-top: 63px;
+    margin-bottom: 50px;
+    padding: 2px;
+
+
+}
+
+#setting {
+    float: left;
+    margin-top: 2px;
+    margin-left: 10px;
+    color: #2e3a44;
+    padding: 5px;
+
+
+}
+
+#rightHeader {
+    float: right;
+    text-align: right;
+    color: #2e3a44;
+    margin-right: 10px;
+    padding: 5px;
+
+
+}
+#res{
+
+    text-align: center;
+    margin-top: 150px;
+}
+#err {
+
+    text-align: center;
+    margin-top: 100px;
+}
+
+#log-in{
+
+    margin: 10px;
+}
+#footer {
+
+    color: #2D2020;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 700;
+}
+
+
+body {
+
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: auto;
+    outline: none;
+    padding: 0;
+}
+
+
+a {
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    padding: 6px 6px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #2D2020;
+    transition: .15s ease-in-out;
+}
+a:hover {
+    box-shadow: 0 0 10px 0 coral inset, 0 0 10px 4px bisque;
+    color: #2D2020;
+}
+
+
+
+

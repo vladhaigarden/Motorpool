@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/startPage.css}"/>
+    <script src="/js/scroll.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title th:text="#{title.startPage}"></title>
+</head>
+<body>
+<header>
+    <div id="logo" onclick="slowScroll('#top')">
+        <span>Motor pool</span>
+    </div>
+    <div id="about">
+        <a href="#" th:text="#{link.opportunity}"></a>
+        <a href="#" th:text="#{link.bestEmployees}"></a>
+        <a href="#" th:text="#{link.logIn}"></a>
+        <a href="#" th:text="#{link.faq}" title="Answers on questions"></a>
+    </div>
+</header>
+
+<div id="top">
+    <h1 th:text="#{slogan1}"></h1>
+    <h3 th:text="#{slogan1}"></h3>
+</div>
+
+<div id="main">
+    <div class="intro">
+        <h2 th:text="#{slogan3}"></h2>
+    </div>
+    <div class="text">
+        <span th:text="#{company.description}"></span>
+    </div>
+</div>
+
+<div id="overview">
+    <h2 th:text="#{bestEmployees}"></h2>
+    <h4 th:text="#{dispatchers.drivers}"></h4>
+    <div class="img">
+        <img th:src="@{/img/workers/lyutaya.jpg}"/>
+        <span th:text="#{name.worker1}"></span>
+    </div>
+    <div class="img">
+        <img th:src="@{/img/workers/vashkevich.jpg}"/>
+        <span th:text="#{name.worker2}"></span>
+    </div>
+    <div class="img">
+        <img th:src="@{/img/workers/klimenko.jpg}"/>
+        <span th:text="#{name.worker3}"></span>
+    </div>
+    <div class="img">
+        <img th:src="@{/img/workers/kravchenko.jpg}"/>
+        <span th:text="#{name.worker4}"></span>
+    </div>
+</div>
+
+<div id="contacts">
+    <h5 th:text="#{log.into.account}"></h5>
+    <form id="form_input" action="controller">
+        <input type="hidden" name="command" value="login"/>
+        <label th:text="#{login}"><span>*</span></label><br>
+        <input type="text" th:placeholder="#{enter.login}" name="login" id="name"><br>
+        <label th:text="#{password}"><span>*</span></label><br>
+        <input type="password" placeholder="#{enter.password}" name="password" id="password"><br>
+        <input id="buttonLog" style="width:3.9em; color:#fafafa;" type="submit" value="Log" >
+    </form>
+</div>
+
+<div id="faq">
+    <div>
+        <span class="title" th:text="#{for.clients}"></span><br>
+        <p th:text="#{message.clients}"></p>
+    </div>
+    <div>
+        <span class="title" th:text="#{for.drivers}"></span><br>
+        <p th:text="#{message.drivers}"></p>
+    </div>
+    <div>
+        <span class="title" th:text="#{for.dispatchers}"></span><br>
+        <p th:text="#{message.dispatchers}"></p>
+    </div>
+</div>
+</body>
+</html>
